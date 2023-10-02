@@ -1,0 +1,108 @@
+/* bogenspiele.mehlhase.info */
+/* (c) Sascha Mehlhase - kontakt@mehlhase.info */
+
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
+body {
+  background-color: #eee;
+  font: 14px sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+#boardframe {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+/*  margin: -250px 0 0 -250px;*/
+/*  background-color: #fff;*/
+/*  border: 1px solid #aaa;*/
+  z-index: 1;
+}
+
+#boardframe canvas {
+/*  cursor: pointer;*/
+  border: 1px solid #ccc;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  z-index: 3;
+  overflow: scroll;
+  max-height: 100%;
+  display: none;
+}
+
+#menusign {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#menucont {
+  margin-left: 50px;
+  padding: 5px;
+}
+
+#menucont table{
+  width: 100%;
+  min-width: 500px;
+}
+#menucont td {
+  vertical-align: top;
+}
+
+#menucont input, select, button, option, textarea {
+  font: 14px sans-serif;
+  padding: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #eee;
+  text-align: center;
+  text-align-last:center;
+  border: 1px solid #bbb;
+  resize: none;
+}
+
+#startdiv table td,th{
+  padding: 3px;
+}
+
+#monitordiv {
+  font: 16px monospace;
+}
+
+#monitordiv table{
+  width: 100%;
+  min-width: 500px;
+}
+
+#monitordiv table td,th{
+  text-align: center;
+  padding: 3px;
+  width: "";
+}
+
+#monitordiv #monitorstats {
+  font: 12px monospace;
+}
+
+.boardHit {
+  cursor: pointer;
+}

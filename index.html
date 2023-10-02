@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<title>bogenspiele.mehlhase.info</title>
+  	<meta name="description" content="">
+  	<meta name="author" content="Sascha Mehlhase">
+  	<meta name="theme-color" content="#eeeeee">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta property="og:image" content="media/icon-512.png">
+  	<link rel="shortcut icon" href="favicon.ico">
+  	<link rel="stylesheet" href="style.css">
+  	<link rel="manifest" href="bogenspiele.webmanifest">
+  	<script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="boardframe">
+      <canvas id="boardcanvas" width="4000" height="4500">Your browser does not support the HTML5 canvas tag.</canvas>
+    </div>
+    <div id="menu">
+      <div id="menusign"><img src="media/icon-64.png" height="50px" width="50px" /></div>
+      <div id="menucont">
+        <h1>bogenspiele.mehlhase.info</h1>
+        <p><strong>&copy; Sascha Mehlhase - <a href="mailto:kontakt@mehlhase.info">kontakt@mehlhase.info</a></strong></p>
+        <hr />
+        <div id="startdiv">
+          <h2>Neues Spiel</h2>
+          <table>
+            <tr>
+              <td>Trage die Namen der Spieler:innen ein</td>
+              <td>
+                <textarea id="players" rows="3">Person 1
+Person 2
+Person 3
+Person 4
+Person 5</textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Wähle die Startpunktzahl</td>
+              <td><input id="points" type="number" value="30" min="10" max="300" /></td>
+            </tr>
+            <tr>
+              <td>Wähle die Spielart aus</td>
+              <td>
+                <select id="rules">
+                  <option value="TS9" selected>Tortenschießen 1 – 9 (3x3 Quadrat)</option>
+                  <option value="TS16">Tortenschießen 1 – 16 (4x4 Quadrat)</option>
+                  <option value="TS10">Tortenschießen 1 – 10 (10er Scheibe)</option>
+                  <option value="TS5">Tortenschießen 1 – 5 (10er Scheibe)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="startmatch">Starte das Spiel</button></td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div id="monitordiv"></div>
+        <div id="rulesdiv">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
