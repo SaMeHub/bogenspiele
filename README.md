@@ -1,1 +1,3 @@
-# bogenspiele => https://bogenspiele.mehlhase.info/
+# bogenspiele
+
+https://bogenspiele.mehlhase.info/
